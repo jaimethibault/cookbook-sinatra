@@ -1,0 +1,12 @@
+<h1>Destroy a Recipe</h1>
+<form action="delete" />
+  Recipe number:<br>
+  <input type="text" name="index" value='enter the number of the recipe'><br>
+  <input type="submit" value="Submit">
+</form>
+<ol>
+  <% @recipes.each do |recipe| %>
+    <li><%= recipe.name %></li>
+  <% end %>
+</ol>
+<a href="/">Back to Home</a>

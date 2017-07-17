@@ -1,0 +1,12 @@
+<h1>This is the list of recipes</h1>
+<a href="/">Back to Home</a>
+<ol>
+  <% @recipes.each do |recipe| %>
+    <li><%= recipe.name %></li>
+    <ul>
+      <li><%= recipe.description %></li>
+      <li><%= recipe.cooking_time %></li>
+    </ul>
+  <% end %>
+</ol>
+<a href="/">Back to Home</a>
